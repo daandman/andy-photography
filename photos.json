@@ -1,0 +1,124 @@
+{
+  "site": {
+    "title": "Andy Prosserman Photography",
+    "tagline": "Travel & Photography",
+    "instagram": "https://www.instagram.com/daandman",
+    "email": "andy.pross@gmail.com"
+  },
+  "featured": [
+    {
+      "src": "images/featured/photo-01.jpg",
+      "alt": "Golden hour over Santorini rooftops",
+      "location": "Santorini, Greece"
+    },
+    {
+      "src": "images/featured/photo-02.jpg",
+      "alt": "Misty morning in the rice terraces",
+      "location": "Bali, Indonesia"
+    },
+    {
+      "src": "images/featured/photo-03.jpg",
+      "alt": "Northern lights dancing over a frozen lake",
+      "location": "Tromsø, Norway"
+    },
+    {
+      "src": "images/featured/photo-04.jpg",
+      "alt": "Street market at dusk",
+      "location": "Marrakech, Morocco"
+    },
+    {
+      "src": "images/featured/photo-05.jpg",
+      "alt": "Lone boat on turquoise water",
+      "location": "Phi Phi Islands, Thailand"
+    },
+    {
+      "src": "images/featured/photo-06.jpg",
+      "alt": "Ancient temple at sunrise",
+      "location": "Angkor Wat, Cambodia"
+    },
+    {
+      "src": "images/featured/photo-07.jpg",
+      "alt": "Dramatic cliff coastline",
+      "location": "Cliffs of Moher, Ireland"
+    },
+    {
+      "src": "images/featured/photo-08.jpg",
+      "alt": "Vibrant street art alley",
+      "location": "Melbourne, Australia"
+    },
+    {
+      "src": "images/featured/photo-09.jpg",
+      "alt": "Desert dunes at golden hour",
+      "location": "Sahara Desert, Morocco"
+    },
+    {
+      "src": "images/featured/photo-10.jpg",
+      "alt": "Mountain reflection in alpine lake",
+      "location": "Banff, Canada"
+    },
+    {
+      "src": "images/featured/photo-11.jpg",
+      "alt": "Cherry blossoms along the river",
+      "location": "Kyoto, Japan"
+    },
+    {
+      "src": "images/featured/photo-12.jpg",
+      "alt": "Colorful houses on the waterfront",
+      "location": "Burano, Italy"
+    }
+  ],
+  "galleries": [
+    {
+      "id": "europe",
+      "title": "Europe",
+      "cover": "images/galleries/europe-cover.jpg",
+      "description": "From Mediterranean coastlines to Nordic wilderness",
+      "photos": [
+        { "src": "images/galleries/europe-01.jpg", "alt": "Santorini sunset", "location": "Greece" },
+        { "src": "images/galleries/europe-02.jpg", "alt": "Venice canals", "location": "Italy" },
+        { "src": "images/galleries/europe-03.jpg", "alt": "Swiss Alps", "location": "Switzerland" },
+        { "src": "images/galleries/europe-04.jpg", "alt": "Paris street", "location": "France" },
+        { "src": "images/galleries/europe-05.jpg", "alt": "Cliffs of Moher", "location": "Ireland" },
+        { "src": "images/galleries/europe-06.jpg", "alt": "Northern lights", "location": "Norway" }
+      ]
+    },
+    {
+      "id": "asia",
+      "title": "Asia",
+      "cover": "images/galleries/asia-cover.jpg",
+      "description": "Temples, street food, and ancient traditions",
+      "photos": [
+        { "src": "images/galleries/asia-01.jpg", "alt": "Rice terraces", "location": "Bali" },
+        { "src": "images/galleries/asia-02.jpg", "alt": "Temple at dawn", "location": "Cambodia" },
+        { "src": "images/galleries/asia-03.jpg", "alt": "Cherry blossoms", "location": "Japan" },
+        { "src": "images/galleries/asia-04.jpg", "alt": "Floating market", "location": "Thailand" },
+        { "src": "images/galleries/asia-05.jpg", "alt": "Great Wall", "location": "China" },
+        { "src": "images/galleries/asia-06.jpg", "alt": "Taj Mahal", "location": "India" }
+      ]
+    },
+    {
+      "id": "africa",
+      "title": "Africa & Middle East",
+      "cover": "images/galleries/africa-cover.jpg",
+      "description": "Desert landscapes and vibrant cultures",
+      "photos": [
+        { "src": "images/galleries/africa-01.jpg", "alt": "Sahara dunes", "location": "Morocco" },
+        { "src": "images/galleries/africa-02.jpg", "alt": "Marrakech market", "location": "Morocco" },
+        { "src": "images/galleries/africa-03.jpg", "alt": "Safari sunset", "location": "Kenya" },
+        { "src": "images/galleries/africa-04.jpg", "alt": "Cape Town coast", "location": "South Africa" }
+      ]
+    },
+    {
+      "id": "americas",
+      "title": "The Americas",
+      "cover": "images/galleries/americas-cover.jpg",
+      "description": "Mountain peaks, coastlines, and city life",
+      "photos": [
+        { "src": "images/galleries/americas-01.jpg", "alt": "Banff reflection", "location": "Canada" },
+        { "src": "images/galleries/americas-02.jpg", "alt": "NYC skyline", "location": "USA" },
+        { "src": "images/galleries/americas-03.jpg", "alt": "Patagonia peaks", "location": "Argentina" },
+        { "src": "images/galleries/americas-04.jpg", "alt": "Havana street", "location": "Cuba" }
+      ]
+    }
+  ]
+}

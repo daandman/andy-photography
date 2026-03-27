@@ -45,71 +45,52 @@
   </header>
 
   <main>
-    <section class="contact-section" style="padding-top: 120px;">
-      <div class="container">
-        <div class="contact-grid">
-          <div class="contact-left">
-            <div class="contact-info">
-              <h2>Get in Touch!</h2>
-              <p>Whether you're interested in prints, licensing, collaborations, or just want to say hello - I'd love to hear from you.</p>
+    <section class="contact-split">
+      <div class="contact-split-photo">
+        <img src="images/contact/IMG_4155.jpeg" alt="Andy Prosserman Photography">
+      </div>
+      <div class="contact-split-form">
+        <div class="contact-split-form-inner">
+          <h1>Get in Touch!</h1>
+          <p class="contact-blurb">Whether you're interested in prints, licensing, collaborations, or just want to say hello.</p>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
             </div>
-            <form class="contact-form" id="contactForm">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-              </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
-                <select id="subject" name="subject">
-                  <option value="general">General Inquiry</option>
-                  <option value="prints">Print Purchase</option>
-                  <option value="licensing">Licensing</option>
-                  <option value="collaboration">Collaboration</option>
-                  <option value="other">Other</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-full">Send Message</button>
-              <div class="form-status" id="formStatus"></div>
-            </form>
-            <div class="contact-instagram">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-              </svg>
-              <a href="#" id="contactInstagram" target="_blank" rel="noopener">Follow on Instagram</a>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
             </div>
-          </div>
-
-          <div class="contact-right">
-            <div class="contact-image">
-              <img src="images/contact/IMG_4155.jpeg" alt="Andy Prosserman Photography">
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General Inquiry</option>
+                <option value="prints">Print Purchase</option>
+                <option value="licensing">Licensing</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="other">Other</option>
+              </select>
             </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-full">Send Message</button>
+            <div class="form-status" id="formStatus"></div>
+          </form>
+          <div class="contact-instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+            </svg>
+            <a href="#" id="contactInstagram" target="_blank" rel="noopener">Follow on Instagram</a>
           </div>
         </div>
       </div>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <p>&copy; <span id="year"></span> Andy Prosserman Photography</p>
-        <div class="footer-links">
-          <a href="contact.html">Contact</a>
-          <a href="#" id="footerInstagram" target="_blank" rel="noopener">Instagram</a>
-        </div>
-      </div>
-    </div>
-  </footer>
 
   <script src="script.js"></script>
   <script>

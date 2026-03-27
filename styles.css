@@ -777,7 +777,7 @@ a:hover {
 /* === Contact — Option A: Split Screen === */
 .contact-split {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: clamp(300px, 26%, 400px) 1fr;
   min-height: auto;
   margin-top: 72px;
 }

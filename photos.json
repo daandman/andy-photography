@@ -5,6 +5,14 @@
     "instagram": "https://www.instagram.com/daandman",
     "email": "andy.pross@gmail.com"
   },
+  "hero": [
+    { "src": "images/hero/_U1A7299.jpg", "alt": "Black rhino at golden hour" },
+    { "src": "images/hero/SST50060.jpg", "alt": "Mountain gorilla peering through leaves" },
+    { "src": "images/hero/SST50278-Enhanced-NR-4.jpg", "alt": "" },
+    { "src": "images/hero/SST56244.jpg", "alt": "" },
+    { "src": "images/hero/SST59266 2.jpg", "alt": "" },
+    { "src": "images/hero/Q1000934.jpg", "alt": "" }
+  ],
   "featured": [
     {
       "src": "https://picsum.photos/seed/santorini/1200/800",

@@ -223,15 +223,26 @@ async function loadFeaturedPhotos() {
   const grid = document.getElementById('featuredGrid');
   if (!grid) return;
 
-  // Hero slideshow
-  const slides = document.querySelectorAll('.hero-slideshow .hero-bg');
-  if (slides.length > 1) {
-    let current = 0;
-    setInterval(() => {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
-    }, 5000);
+  // Hero slideshow — built from photos.json hero array
+  const slideshow = document.getElementById('heroSlideshow');
+  if (slideshow && data.hero && data.hero.length) {
+    data.hero.forEach((item, i) => {
+      const img = document.createElement('img');
+      img.className = 'hero-bg' + (i === 0 ? ' active' : '');
+      img.src = item.src;
+      img.alt = item.alt || '';
+      slideshow.appendChild(img);
+    });
+
+    if (data.hero.length > 1) {
+      let current = 0;
+      const slides = slideshow.querySelectorAll('.hero-bg');
+      setInterval(() => {
+        slides[current].classList.remove('active');
+        current = (current + 1) % slides.length;
+        slides[current].classList.add('active');
+      }, 5000);
+    }
   }
 
   data.featured.forEach((photo, i) => {

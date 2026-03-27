@@ -7,117 +7,121 @@
   },
   "featured": [
     {
-      "src": "images/featured/photo-01.jpg",
+      "src": "https://picsum.photos/seed/santorini/1200/800",
       "alt": "Golden hour over Santorini rooftops",
       "location": "Santorini, Greece"
     },
     {
-      "src": "images/featured/photo-02.jpg",
+      "src": "https://picsum.photos/seed/bali/800/1200",
       "alt": "Misty morning in the rice terraces",
       "location": "Bali, Indonesia"
     },
     {
-      "src": "images/featured/photo-03.jpg",
+      "src": "https://picsum.photos/seed/norway/1200/900",
       "alt": "Northern lights dancing over a frozen lake",
       "location": "Tromsø, Norway"
     },
     {
-      "src": "images/featured/photo-04.jpg",
+      "src": "https://picsum.photos/seed/marrakech/900/1200",
       "alt": "Street market at dusk",
       "location": "Marrakech, Morocco"
     },
     {
-      "src": "images/featured/photo-05.jpg",
+      "src": "https://picsum.photos/seed/thailand/1200/800",
       "alt": "Lone boat on turquoise water",
       "location": "Phi Phi Islands, Thailand"
     },
     {
-      "src": "images/featured/photo-06.jpg",
+      "src": "https://picsum.photos/seed/angkor/800/1000",
       "alt": "Ancient temple at sunrise",
       "location": "Angkor Wat, Cambodia"
     },
     {
-      "src": "images/featured/photo-07.jpg",
+      "src": "https://picsum.photos/seed/ireland/1200/900",
       "alt": "Dramatic cliff coastline",
       "location": "Cliffs of Moher, Ireland"
     },
     {
-      "src": "images/featured/photo-08.jpg",
+      "src": "https://picsum.photos/seed/melbourne/900/900",
       "alt": "Vibrant street art alley",
       "location": "Melbourne, Australia"
     },
     {
-      "src": "images/featured/photo-09.jpg",
+      "src": "https://picsum.photos/seed/sahara/1200/800",
       "alt": "Desert dunes at golden hour",
       "location": "Sahara Desert, Morocco"
     },
     {
-      "src": "images/featured/photo-10.jpg",
+      "src": "https://picsum.photos/seed/banff/800/1200",
       "alt": "Mountain reflection in alpine lake",
       "location": "Banff, Canada"
     },
     {
-      "src": "images/featured/photo-11.jpg",
+      "src": "https://picsum.photos/seed/kyoto/1200/800",
       "alt": "Cherry blossoms along the river",
       "location": "Kyoto, Japan"
     },
     {
-      "src": "images/featured/photo-12.jpg",
+      "src": "https://picsum.photos/seed/burano/900/1200",
       "alt": "Colorful houses on the waterfront",
       "location": "Burano, Italy"
     }
   ],
   "galleries": [
     {
-      "id": "europe",
-      "title": "Europe",
-      "cover": "images/galleries/europe-cover.jpg",
-      "description": "From Mediterranean coastlines to Nordic wilderness",
+      "id": "wildlife",
+      "title": "Wildlife",
+      "cover": "https://picsum.photos/seed/wildlife-cover/800/600",
+      "description": "Gorillas, penguins, and everything in between",
       "photos": [
-        { "src": "images/galleries/europe-01.jpg", "alt": "Santorini sunset", "location": "Greece" },
-        { "src": "images/galleries/europe-02.jpg", "alt": "Venice canals", "location": "Italy" },
-        { "src": "images/galleries/europe-03.jpg", "alt": "Swiss Alps", "location": "Switzerland" },
-        { "src": "images/galleries/europe-04.jpg", "alt": "Paris street", "location": "France" },
-        { "src": "images/galleries/europe-05.jpg", "alt": "Cliffs of Moher", "location": "Ireland" },
-        { "src": "images/galleries/europe-06.jpg", "alt": "Northern lights", "location": "Norway" }
+        { "src": "https://picsum.photos/seed/gorilla/1200/800", "alt": "Mountain gorilla", "location": "Uganda" },
+        { "src": "https://picsum.photos/seed/penguin/800/1200", "alt": "Penguins on ice", "location": "Antarctica" },
+        { "src": "https://picsum.photos/seed/safari/1200/900", "alt": "Safari sunset", "location": "Kenya" },
+        { "src": "https://picsum.photos/seed/elephant/1200/800", "alt": "Elephant crossing", "location": "Tanzania" },
+        { "src": "https://picsum.photos/seed/flamingo/900/1200", "alt": "Flamingos at dawn", "location": "Namibia" },
+        { "src": "https://picsum.photos/seed/turtle/1200/800", "alt": "Sea turtle", "location": "Galapagos" }
       ]
     },
     {
-      "id": "asia",
-      "title": "Asia",
-      "cover": "images/galleries/asia-cover.jpg",
-      "description": "Temples, street food, and ancient traditions",
+      "id": "street",
+      "title": "Street | General",
+      "cover": "https://picsum.photos/seed/street-cover/800/600",
+      "description": "City scenes, architecture, and the rhythm of everyday life",
       "photos": [
-        { "src": "images/galleries/asia-01.jpg", "alt": "Rice terraces", "location": "Bali" },
-        { "src": "images/galleries/asia-02.jpg", "alt": "Temple at dawn", "location": "Cambodia" },
-        { "src": "images/galleries/asia-03.jpg", "alt": "Cherry blossoms", "location": "Japan" },
-        { "src": "images/galleries/asia-04.jpg", "alt": "Floating market", "location": "Thailand" },
-        { "src": "images/galleries/asia-05.jpg", "alt": "Great Wall", "location": "China" },
-        { "src": "images/galleries/asia-06.jpg", "alt": "Taj Mahal", "location": "India" }
+        { "src": "https://picsum.photos/seed/market/1200/800", "alt": "Market vendor", "location": "Marrakech, Morocco" },
+        { "src": "https://picsum.photos/seed/tokyo/800/1200", "alt": "Rainy street", "location": "Tokyo, Japan" },
+        { "src": "https://picsum.photos/seed/alley/900/1200", "alt": "Colorful alley", "location": "Burano, Italy" },
+        { "src": "https://picsum.photos/seed/havana/1200/800", "alt": "Morning commute", "location": "Havana, Cuba" },
+        { "src": "https://picsum.photos/seed/streetart/1200/900", "alt": "Street art", "location": "Melbourne, Australia" },
+        { "src": "https://picsum.photos/seed/paris/800/1200", "alt": "Paris cafe", "location": "Paris, France" }
       ]
     },
     {
-      "id": "africa",
-      "title": "Africa & Middle East",
-      "cover": "images/galleries/africa-cover.jpg",
-      "description": "Desert landscapes and vibrant cultures",
+      "id": "landscapes",
+      "title": "Landscapes | Cityscapes",
+      "cover": "https://picsum.photos/seed/landscapes-cover/800/600",
+      "description": "Mountains, coastlines, deserts, and skylines",
       "photos": [
-        { "src": "images/galleries/africa-01.jpg", "alt": "Sahara dunes", "location": "Morocco" },
-        { "src": "images/galleries/africa-02.jpg", "alt": "Marrakech market", "location": "Morocco" },
-        { "src": "images/galleries/africa-03.jpg", "alt": "Safari sunset", "location": "Kenya" },
-        { "src": "images/galleries/africa-04.jpg", "alt": "Cape Town coast", "location": "South Africa" }
+        { "src": "https://picsum.photos/seed/greece/1200/800", "alt": "Santorini sunset", "location": "Greece" },
+        { "src": "https://picsum.photos/seed/alpine/800/1200", "alt": "Alpine lake reflection", "location": "Banff, Canada" },
+        { "src": "https://picsum.photos/seed/dunes/1200/900", "alt": "Sahara dunes", "location": "Morocco" },
+        { "src": "https://picsum.photos/seed/aurora/900/1200", "alt": "Northern lights", "location": "Tromso, Norway" },
+        { "src": "https://picsum.photos/seed/terraces/1200/800", "alt": "Rice terraces", "location": "Bali, Indonesia" },
+        { "src": "https://picsum.photos/seed/cliffs/800/1200", "alt": "Cliffs of Moher", "location": "Ireland" }
       ]
     },
     {
-      "id": "americas",
-      "title": "The Americas",
-      "cover": "images/galleries/americas-cover.jpg",
-      "description": "Mountain peaks, coastlines, and city life",
+      "id": "by-region",
+      "title": "By Region",
+      "cover": "https://picsum.photos/seed/region-cover/800/600",
+      "description": "Browse by destination",
       "photos": [
-        { "src": "images/galleries/americas-01.jpg", "alt": "Banff reflection", "location": "Canada" },
-        { "src": "images/galleries/americas-02.jpg", "alt": "NYC skyline", "location": "USA" },
-        { "src": "images/galleries/americas-03.jpg", "alt": "Patagonia peaks", "location": "Argentina" },
-        { "src": "images/galleries/americas-04.jpg", "alt": "Havana street", "location": "Cuba" }
+        { "src": "https://picsum.photos/seed/europe/1200/800", "alt": "Santorini sunset", "location": "Europe" },
+        { "src": "https://picsum.photos/seed/asia/800/1200", "alt": "Temple at dawn", "location": "Asia" },
+        { "src": "https://picsum.photos/seed/africa/1200/900", "alt": "Gorilla trek", "location": "Africa" },
+        { "src": "https://picsum.photos/seed/americas/900/1200", "alt": "Banff reflection", "location": "The Americas" },
+        { "src": "https://picsum.photos/seed/antarctica/1200/800", "alt": "Penguins on ice", "location": "Antarctica" },
+        { "src": "https://picsum.photos/seed/oceania/800/1200", "alt": "Sydney Harbour", "location": "Oceania" }
       ]
     }
   ]

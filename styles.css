@@ -292,13 +292,24 @@ a:hover {
   overflow: hidden;
 }
 
+.hero-slideshow {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
 .hero-bg {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 0;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.hero-bg.active {
+  opacity: 1;
 }
 
 .hero-overlay {
@@ -770,9 +781,62 @@ a:hover {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1.2fr 1fr;
   gap: 64px;
-  align-items: start;
+  align-items: stretch;
+}
+
+.contact-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-right .contact-image {
+  flex: 1;
+  min-height: 300px;
+  margin-top: 0;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-image {
+  flex: 1;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-top: 24px;
+  min-height: 200px;
+}
+
+.contact-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.contact-instagram {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.contact-instagram a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.contact-instagram a:hover {
+  color: var(--accent-hover);
+}
+
+.contact-instagram svg {
+  color: var(--text-light);
+  flex-shrink: 0;
 }
 
 .contact-info h2 {
@@ -958,6 +1022,46 @@ a:hover {
   text-transform: uppercase;
 }
 
+/* === About === */
+.about-section {
+  padding: 0 0 80px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+
+.about-text h2 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.about-text p {
+  color: var(--text-light);
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-text a {
+  color: var(--accent);
+}
+
+.about-text a:hover {
+  color: var(--accent-hover);
+}
+
 /* === Footer === */
 .site-footer {
   padding: 32px 0;
@@ -1022,9 +1126,15 @@ a:hover {
     grid-template-columns: 1fr;
   }
 
-  .contact-grid {
+  .contact-grid,
+  .about-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .about-image {
+    max-width: 400px;
+    margin: 0 auto;
   }
 
   .hero h1 {

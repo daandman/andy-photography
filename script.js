@@ -223,11 +223,15 @@ async function loadFeaturedPhotos() {
   const grid = document.getElementById('featuredGrid');
   if (!grid) return;
 
-  // Set hero background to the first featured photo
-  const heroBg = document.getElementById('heroBg');
-  if (heroBg && data.featured.length > 0) {
-    heroBg.src = data.featured[0].src;
-    heroBg.alt = data.featured[0].alt;
+  // Hero slideshow
+  const slides = document.querySelectorAll('.hero-slideshow .hero-bg');
+  if (slides.length > 1) {
+    let current = 0;
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 5000);
   }
 
   data.featured.forEach((photo, i) => {

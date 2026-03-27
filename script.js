@@ -321,23 +321,37 @@ function initContactForm() {
 
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData);
+    const submitBtn = form.querySelector('button[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending...';
 
-    console.log('Contact form submission:', data);
+    try {
+      const response = await fetch('https://formspree.io/f/mvzvzpbl', {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
 
-    if (status) {
-      status.className = 'form-status success';
-      status.textContent = 'Message sent! I\'ll get back to you soon.';
+      if (response.ok) {
+        form.reset();
+        if (status) {
+          status.className = 'form-status success';
+          status.textContent = 'Message sent! I\'ll get back to you soon.';
+        }
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      if (status) {
+        status.className = 'form-status error';
+        status.textContent = 'Something went wrong. Please email me directly at andy.pross@gmail.com';
+      }
+    } finally {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send Message';
     }
-
-    form.reset();
-
-    setTimeout(() => {
-      if (status) status.textContent = '';
-    }, 5000);
   });
 }

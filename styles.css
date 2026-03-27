@@ -800,12 +800,13 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 48px 48px 48px;
+  padding: 24px 48px 72px;
 }
 
 .contact-split-form-inner {
   width: 100%;
   max-width: 440px;
+  margin-bottom: 48px;
 }
 
 .contact-split-form-inner h1 {

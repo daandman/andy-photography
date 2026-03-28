@@ -248,6 +248,41 @@ async function loadFeaturedPhotos() {
   data.featured.forEach((photo, i) => {
     grid.appendChild(createPhotoCard(photo, i, data.featured));
   });
+
+  // Wait for all images to load then run masonry
+  const images = grid.querySelectorAll('img');
+  let loaded = 0;
+  const runMasonry = () => { if (++loaded >= images.length) layoutMasonry(grid); };
+  images.forEach(img => {
+    if (img.complete) runMasonry();
+    else { img.addEventListener('load', runMasonry); img.addEventListener('error', runMasonry); }
+  });
+
+  window.addEventListener('resize', () => layoutMasonry(grid));
+}
+
+function layoutMasonry(grid) {
+  const numCols = window.innerWidth >= 900 ? 3 : 2;
+  const gap = 12;
+  const totalGap = gap * (numCols - 1);
+  const colWidth = (grid.offsetWidth - totalGap) / numCols;
+  const colHeights = new Array(numCols).fill(0);
+
+  grid.style.position = 'relative';
+
+  const items = grid.querySelectorAll('.photo-card');
+  items.forEach(item => {
+    item.style.position = 'absolute';
+    item.style.width = colWidth + 'px';
+
+    const shortestCol = colHeights.indexOf(Math.min(...colHeights));
+    item.style.left = shortestCol * (colWidth + gap) + 'px';
+    item.style.top = colHeights[shortestCol] + 'px';
+
+    colHeights[shortestCol] += item.offsetHeight + gap;
+  });
+
+  grid.style.height = Math.max(...colHeights) + 'px';
 }
 
 async function loadGalleries() {

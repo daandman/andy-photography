@@ -14,66 +14,17 @@
     { "src": "images/hero/Q1000934.jpg", "alt": "" }
   ],
   "featured": [
-    {
-      "src": "https://picsum.photos/seed/santorini/1200/800",
-      "alt": "Golden hour over Santorini rooftops",
-      "location": "Santorini, Greece"
-    },
-    {
-      "src": "https://picsum.photos/seed/bali/800/1200",
-      "alt": "Misty morning in the rice terraces",
-      "location": "Bali, Indonesia"
-    },
-    {
-      "src": "https://picsum.photos/seed/norway/1200/900",
-      "alt": "Northern lights dancing over a frozen lake",
-      "location": "Tromsø, Norway"
-    },
-    {
-      "src": "https://picsum.photos/seed/marrakech/900/1200",
-      "alt": "Street market at dusk",
-      "location": "Marrakech, Morocco"
-    },
-    {
-      "src": "https://picsum.photos/seed/thailand/1200/800",
-      "alt": "Lone boat on turquoise water",
-      "location": "Phi Phi Islands, Thailand"
-    },
-    {
-      "src": "https://picsum.photos/seed/angkor/800/1000",
-      "alt": "Ancient temple at sunrise",
-      "location": "Angkor Wat, Cambodia"
-    },
-    {
-      "src": "https://picsum.photos/seed/ireland/1200/900",
-      "alt": "Dramatic cliff coastline",
-      "location": "Cliffs of Moher, Ireland"
-    },
-    {
-      "src": "https://picsum.photos/seed/melbourne/900/900",
-      "alt": "Vibrant street art alley",
-      "location": "Melbourne, Australia"
-    },
-    {
-      "src": "https://picsum.photos/seed/sahara/1200/800",
-      "alt": "Desert dunes at golden hour",
-      "location": "Sahara Desert, Morocco"
-    },
-    {
-      "src": "https://picsum.photos/seed/banff/800/1200",
-      "alt": "Mountain reflection in alpine lake",
-      "location": "Banff, Canada"
-    },
-    {
-      "src": "https://picsum.photos/seed/kyoto/1200/800",
-      "alt": "Cherry blossoms along the river",
-      "location": "Kyoto, Japan"
-    },
-    {
-      "src": "https://picsum.photos/seed/burano/900/1200",
-      "alt": "Colorful houses on the waterfront",
-      "location": "Burano, Italy"
-    }
+    { "src": "images/featured/_U1A4806.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/_U1A6883-2.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/_U1A6995.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/_U1A1277-2.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/SST50060.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/SST50216.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/SST50250.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/SST50273.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/SST57117.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/SST59266.jpg", "alt": "", "location": "" },
+    { "src": "images/featured/SST59332.jpg", "alt": "", "location": "" }
   ],
   "galleries": [
     {

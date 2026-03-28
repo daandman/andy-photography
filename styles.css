@@ -425,31 +425,10 @@ a:hover {
   gap: 16px;
 }
 
-/* Mixed grid: varied sizes for visual interest */
+/* Mosaic: JS masonry handles layout — left-to-right, natural heights */
 .mixed-grid {
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 280px;
-  gap: 12px;
-}
-
-.mixed-grid .photo-card { aspect-ratio: auto; }
-
-.mixed-grid .photo-card:nth-child(1) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.mixed-grid .photo-card:nth-child(5) {
-  grid-column: span 2;
-}
-
-.mixed-grid .photo-card:nth-child(8) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
-.mixed-grid .photo-card:nth-child(11) {
-  grid-column: span 2;
+  display: block;
+  position: relative;
 }
 
 /* === Photo Card === */
@@ -458,14 +437,14 @@ a:hover {
   overflow: hidden;
   border-radius: var(--radius);
   cursor: pointer;
-  aspect-ratio: 4 / 3;
   background: var(--bg-alt);
 }
 
 .photo-card img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
+  object-fit: unset;
   transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.5s ease;
 }
 
@@ -1106,8 +1085,9 @@ a:hover {
 
 .about-image img {
   width: 100%;
+  height: auto;
+  display: block;
   border-radius: var(--radius);
-  object-fit: cover;
 }
 
 .about-text h2 {
@@ -1169,28 +1149,6 @@ a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .mixed-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 240px;
-  }
-
-  .mixed-grid .photo-card:nth-child(1) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-
-  .mixed-grid .photo-card:nth-child(5) {
-    grid-column: span 1;
-  }
-
-  .mixed-grid .photo-card:nth-child(8) {
-    grid-column: span 2;
-    grid-row: span 1;
-  }
-
-  .mixed-grid .photo-card:nth-child(11) {
-    grid-column: span 1;
-  }
 
   .galleries-grid {
     grid-template-columns: 1fr;
@@ -1260,18 +1218,11 @@ a:hover {
     visibility: visible;
   }
 
-  .photo-grid,
-  .mixed-grid {
+  .photo-grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
     gap: 8px;
   }
 
-  .mixed-grid .photo-card {
-    grid-column: span 1 !important;
-    grid-row: span 1 !important;
-    aspect-ratio: 3 / 4;
-  }
 
   .hero {
     min-height: 100vh;
